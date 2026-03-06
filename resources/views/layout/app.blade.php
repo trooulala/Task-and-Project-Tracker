@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Management</title>
-    @vite(['resources/js/main.ts']) {{-- Menghubungkan ke entry point Vue --}}
+    <title>Task Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    @vite(['resources/js/main.ts'])
 </head>
-<body>
-    <div id="app"></div> {{-- Tempat Vue akan di-mount --}}
+<body class="bg-dark text-white"> <div id="app">
+        @yield('content')
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
